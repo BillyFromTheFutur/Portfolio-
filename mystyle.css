@@ -1,4 +1,4 @@
-.PageUn{
+/*.PageUn{
     height: 100px;
     width: 200px;
     border-top-left-radius: 149px;
@@ -9,4 +9,150 @@
     margin-top: 45px;
     background-color: aqua;
     transform: rotate(-15deg);
+}*/
+html {
+  scroll-behavior: smooth ;
+}
+body{
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+
+}
+.Pacquet {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+}
+.un {
+  background: #efdefe;
+}
+.deux {
+  background: #a3f3d3;
+}
+.trois {
+  background: #0bbaa0;
+}
+.quattre {
+  background: #00dfdf;
+}
+
+.Pacquet {
+      transform: rotate(90deg) translateY(-100vh);
+      transform-origin: top left;
+    }
+.Hors-Pacquet {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.Hors-Pacquet {
+        
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.gauche{
+  width: calc(100% / 3); 
+  height: 100%;
+}
+.milieu{
+  width: calc(100% / 3); 
+  height: 100%;
+}
+.droite{
+  width: calc(100% / 3); 
+  height: 100%;
+}
+.un .gauche .Pmsg{
+  margin-left: 90px;
+  margin-top:15%;
+  height: 70px;
+  width: 155px;
+  background-color: blueviolet;
+  transform: rotate(4.5deg);
+  border-radius: 20px; 
+}
+.un .gauche .Dmsg{
+  margin-top:15%;
+  margin-left:65%;
+  height: 70px;
+  width: 155px;
+  background-color: blueviolet;
+  transform: rotate(4.5deg);
+  border-radius: 20px;
+  margin-bottom: 25%; 
+}
+.un .gauche h2{
+  margin-left: 70px;
+}
+.un .gauche li{
+  margin-left: 70px;
+  list-style: none;
+  margin-top: 15px;
+}
+.un .milieu{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.un .milieu h1{
+  margin-top: 35px;
+}
+.un .milieu .img{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 600px;
+  background-color: blueviolet;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 110px;
+  border-bottom-left-radius: 220px;
+  transform: rotate(10deg);
+}
+.un .milieu .image{
+height: 650px;
+margin-left: -25px;
+margin-top: -25px;
+transform: rotate(-10deg);
+}
+.un .droite .Ttmsg{
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 90px;
+  background-color: brown;
+  height: 130px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.un .droite .h{
+  transform: rotate(15deg);
+}
+.un .droite .m{
+  transform: rotate(-4deg);
+  margin-top: 70px;
+  margin-left: 60px;
+}
+.un .droite .b{
+  transform: rotate(5deg);
+  margin-top: 70px;
+  margin-left: -10px;
 }
